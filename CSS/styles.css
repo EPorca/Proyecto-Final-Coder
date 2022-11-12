@@ -1,0 +1,256 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*estilo menu*/
+
+body header ul li a{
+    color: rgb(0, 26, 34);
+    font-size: 18px;
+    display: flex;
+    margin-left: 20px;
+    background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%);
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 2px rgb(75, 75, 228);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+body header ul li a:hover{
+    transform: scale(0.8);
+    background-image: linear-gradient(to left, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%);
+}
+
+/*acomodado de menu y tipo de letra*/
+header ul li{
+    display: inline-block;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+
+header ul li a{
+        padding: 10px;
+        text-decoration: none;
+}
+
+
+/*estilo del main*/
+
+main .titulo{
+    margin: 50px;
+    color: black;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Crimson Text', serif;
+}
+body main .descrip-Home{
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(119, 6, 29);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cinzel', serif;
+}
+
+main{
+    margin: 80px
+}
+
+
+/*estilo pie de pagina*/
+
+footer{
+    margin-top: 100px;
+}
+
+footer h2{
+    font-size: 18px;
+    color: rgb(87, 86, 86);
+}
+
+footer nav div{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
+
+
+footer nav div a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(0, 0, 189);
+    padding: 6px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 3px #000000;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer nav div a:hover{
+    transform: scale(0.8);
+    background-color:rgb(0, 0, 253) ;
+}
+
+/*fondo completo*/
+body{
+    background-image: url(../img/fondo\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*edit de perfil*/
+body header .presentacion, h2{
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+}
+
+body main .nombre{
+    text-decoration: underline;
+    font-size: 45px;
+    font-family: 'Crimson Text', serif;
+}
+
+body main .info-Personal{
+    font-family: 'Crimson Text', serif;
+    font-size: 27px;
+    margin-top: 120px;
+}
+
+body main .subtitulo-Nombre{
+    margin-bottom: 80px;
+    font-size: 30px;
+    font-family: 'Crimson Text', serif;
+}
+
+
+body main .dato{
+    background-color: rgb(33, 33, 194);
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 100px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+
+body main .Info{
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    color: rgb(35, 35, 153);
+    text-decoration: underline;
+    border-radius: 100px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+
+body main h2{
+    text-decoration: underline;
+}
+
+
+
+/*edit de aptitudes*/
+
+
+main .aptitudes{
+    text-align: center;
+    color: rgb(80, 255, 133);
+    font-size: 23px;
+    padding: 7px;
+}
+
+
+
+/*edit de contacto*/
+    main form fieldset{
+        font-size: 20px;
+        color:rgb(43, 66, 66) ;
+        text-shadow: 1px 1px 4px black;
+        padding: 70px;
+        height: 100%;
+        background-image: url(../img/fondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    main form fieldset div label{
+        font-size: 20px;
+        color: black;
+        font-family:'Cinzel', serif ;     
+    }
+
+
+    main form fieldset div input{
+        padding: 7px;
+        margin: 7px;
+    }
+
+    .consulta-Contacto{
+        padding-left: 300px;
+        padding-bottom:20px ;
+        text-align: start;
+    }
+
+
+    .enviado-Formulario{
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px 3px rgb(49, 49, 49);
+        background-color:#00aeff;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px rgb(0, 0, 0);
+    }
+
+
+/*fuente para toda la pag*/
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*estilo foto*/
+main h2 .foton{
+    height: 470px;
+    border-radius: 100%;
+    border-color: black;
+    box-shadow: 2px 2px 7px black;
+    width: 45%;
+}
+
+
+
+/*estilo loguito wsp*/
