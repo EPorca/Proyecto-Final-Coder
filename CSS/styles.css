@@ -25,6 +25,12 @@ body header ul li a{
     text-shadow: 1px 1px 2px rgb(75, 75, 228);
 }
 
+.menu-Titulo{
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 2.3rem;
+    text-decoration:none;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -109,7 +115,6 @@ footer nav div a{
     align-items: center;
     padding: 6px;
     text-shadow: 1px 1px 3px #000000;
-    font-family: 'Nunito', sans-serif;
 }
 
 .fotos-Redes{
@@ -152,11 +157,11 @@ body header .presentacion, h2{
 body main .nombre{
     text-decoration: underline;
     font-size: 45px;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Cinzel', serif;
 }
 
 body main .info-Personal{
-    font-family: 'Crimson Text', serif;
+    font-family: 'Cinzel', serif;
     font-size: 27px;
     margin-top: 120px;
 }
@@ -164,7 +169,7 @@ body main .info-Personal{
 body main .subtitulo-Nombre{
     margin-bottom: 80px;
     font-size: 30px;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Cinzel', serif;
 }
 
 
