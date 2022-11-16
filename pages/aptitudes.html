@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINK CSS-->
     <link rel="stylesheet" href="../CSS/styles.css">
-     <!--LINK FUENTE-->
+    <!--LINK FUENTE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
@@ -15,56 +16,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <!--Link Animaciones-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Link Bootstrap-->
+    <link rel="stylesheet" href="../CSS/boostrap/bootstrap.min.css">
     <title>Curriculum Enzo | Aptitudes</title>
 </head>
+
 <body>
     <header class="menu">
         <nav>
-            <h1 data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+            <h1>
                 Mi Curriculum Web
             </h1>
         </nav>
-        <ul> 
-             <li>
-             <a href="../index.html">Home</a>
-             </li>
-             <li>
-            <a href="perfil.html">Perfil</a>
-             </li>
-             <li><a href="aptitudes.html">Aptitudes</a></li>
-             <li><a href="servicios.html">Servicios</a></li>
-             <li><a href="contacto.html">Contacto</a></li>
-         </ul>
-     </header>
-     <main>
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="perfil.html">Perfil</a>
+            </li>
+            <li><a href="aptitudes.html">Aptitudes</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+    <main>
         <h2 class="habilidades">
             Habilidades como desarrollador
         </h2>
         <div class="aptitudes">HTML</div>
+        <div class="progress">
+            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 100%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">100%</div>
+        </div>
         <div class="aptitudes">CSS</div>
+        <div class="progress">
+            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 70%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">70%</div>
+        </div>
         <div class="aptitudes">React JS</div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">0%</div>
+        </div>
         <div class="aptitudes">JavaScript</div>
+        <div class="progress">
+            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 5%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">5%</div>
+        </div>
         <div class="aptitudes">API</div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">0%</div>
+        </div>
         <div class="aptitudes">Angular</div>
-     </main>
-     <footer>
-            <h2>
-                Copyright . Todos los derechos reservados
-            </h2>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">0%</div>
+        </div>
+    </main>
+    <footer>
+        <div class="logo-WspMove">
+            <a href="https://walink.co/32d60f" target="_blank"><img src="../img/wsp.png" alt="Logo de whatsapp"
+                    class="logo-Wsp"></a>
+        </div>
+        <h2>
+            Copyright . Todos los derechos reservados
+        </h2>
         <nav>
             <div>
-                <a href="https://www.instagram.com/enzo08porcari/" target="_blank">Instagram</a>
-        
-                <a href="https://github.com/EPorca" target="_blank">GitHub</a>
-         
-                <a href="https://www.facebook.com/EnzoPocari/" target="_blank">Facebook</a>
-        
-                <a href="https://www.linkedin.com/in/enzo-porcari-105b90248/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/enzo08porcari/" target="_blank"><img src="../img/instagram.png"
+                        alt="Instagram" class="fotos-Redes"></a>
+                <a href="https://github.com/EPorca" target="_blank"><img src="../img/github.png" alt="GitHub"
+                        class="fotos-Redes"></a>
+                <a href="https://www.facebook.com/EnzoPocari/" target="_blank"><img src="../img/facebook.png"
+                        alt="Facebook" class="fotos-Redes"></a>
+                <a href="https://www.linkedin.com/in/enzo-porcari-105b90248/" target="_blank"><img
+                        src="../img/linkedin.png" alt="LinkedIn" class="fotos-RedesLink"></a>
             </div>
-        </nav>   
-     </footer>
+        </nav>
+    </footer>
 
 
     <!--js AOS-->
@@ -72,6 +103,8 @@
     <script>
         AOS.init();
     </script>
-    
+    <!--JS Bootstrap-->
+    <script src="../js/bootstrap.min.js"></script>
 </body>
+
 </html>

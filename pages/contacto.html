@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!-- LINK CSS-->
-       <link rel="stylesheet" href="../CSS/styles.css">
-       <!--LINK FUENTE-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-        <!--Link Animaciones-->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <title>Curriculum Enzo | Contacto</title>
+    <!-- LINK CSS-->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <!--LINK FUENTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <!--Link Animaciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Link Bootstrap-->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../CSS/boostrap/bootstrap.min.css">
+ 
+    <title>Curriculum Enzo | Contacto</title>
 </head>
 
 
 <body>
     <header class="menu">
         <nav>
-            <h1 data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+            <h1>
                 Mi Curriculum Web
             </h1>
         </nav>
-        <ul> 
-             <li>
-             <a href="../index.html">Home</a>
-             </li>
-             <li>
-            <a href="perfil.html">Perfil</a>
-             </li>
-             <li><a href="aptitudes.html">Aptitudes</a></li>
-             <li><a href="servicios.html">Servicios</a></li>
-             <li><a href="contacto.html">Contacto</a></li>
-         </ul>
-     </header>
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="perfil.html">Perfil</a>
+            </li>
+            <li><a href="aptitudes.html">Aptitudes</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
     <main>
-        <form action="">
+<!--         <form>
             <fieldset>
                 <legend>
                     Completa tus datos
@@ -63,22 +66,50 @@
                     <input class="enviado-Formulario" type="reset" value="Borrar Consulta">
                 </div>
             </fieldset>
+        </form> -->
+        <form class="cuerpo-form row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control tamañoe"  placeholder="tuemail@gmail.com">
+            </div>
+            <div class="col-md-6">
+                <label for="campo-nombre" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control tamañoe"  placeholder="Hector Alvarez">
+            </div>
+            <div class="col-12">
+                <label for="inputTelefono" class="form-label">Numero de Telefono</label>
+                <input type="tel" class="tamañot form-control"  placeholder="3572999999">
+            </div>
+            <div class="col-md-6">
+                <label for="inputState" class="form-label">Realiza tu consulta aqui:</label>
+<!--                 <input type="text" class="form-control" id="inputCity"> -->
+                <textarea name="box-text"  cols="20" rows="8" class="form-control tamañob" placeholder="Escribe tu consulta"></textarea>
+            </div>
+            </div>
+            <div class="col-12">
+                <button onclick="alert('No disponible, fuera de servicio temporalmente' )" type="submit" class="btn btn-primary">Enviar</button>
+            </div>
         </form>
     </main>
     <footer>
-            <h2>
-                Copyright . Todos los derechos reservados
-            </h2>
+        <div class="logo-WspMove">
+            <a href="https://walink.co/32d60f" target="_blank"><img src="../img/wsp.png" alt="Logo de whatsapp"
+                    class="logo-Wsp"></a>
+        </div>
+        <h2>
+            Copyright . Todos los derechos reservados
+        </h2>
         <nav>
             <div>
-            <a href="https://www.instagram.com/enzo08porcari/" target="_blank">Instagram</a>
-         
-            <a href="https://github.com/EPorca" target="_blank">GitHub</a>
-        
-                <a href="https://www.facebook.com/EnzoPocari/" target="_blank">Facebook</a>
-          
-                <a href="https://www.linkedin.com/in/enzo-porcari-105b90248/" target="_blank">LinkedIn</a>
-            </div>   
+                <a href="https://www.instagram.com/enzo08porcari/" target="_blank"><img src="../img/instagram.png"
+                        alt="Instagram" class="fotos-Redes"></a>
+                <a href="https://github.com/EPorca" target="_blank"><img src="../img/github.png" alt="GitHub"
+                        class="fotos-Redes"></a>
+                <a href="https://www.facebook.com/EnzoPocari/" target="_blank"><img src="../img/facebook.png"
+                        alt="Facebook" class="fotos-Redes"></a>
+                <a href="https://www.linkedin.com/in/enzo-porcari-105b90248/" target="_blank"><img
+                        src="../img/linkedin.png" alt="LinkedIn" class="fotos-RedesLink"></a>
+            </div>
         </nav>
     </footer>
 
@@ -87,5 +118,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

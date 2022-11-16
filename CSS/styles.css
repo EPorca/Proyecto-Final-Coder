@@ -3,8 +3,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* Barra de scroll oculta */
 }
 
+::-webkit-scrollbar {
+    display: none;
+    }
 
 
 
@@ -54,11 +58,13 @@ main .titulo{
     margin: 50px;
     color: black;
     font-size: 30px;
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
     font-family: 'Crimson Text', serif;
 }
+
+
 body main .descrip-Home{
     padding: 10px;
     text-align: center;
@@ -87,12 +93,10 @@ footer h2{
 
 footer nav div{
     display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    padding: 30px;
+    gap: 30px;
+    justify-content: space-around;
+    padding: 10px;
 }
-
-
 
 
 footer nav div a{
@@ -103,17 +107,31 @@ footer nav div a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color:rgb(0, 0, 189);
     padding: 6px;
-    border-radius: 30px;
-    box-shadow: 1px 1px 3px black;
     text-shadow: 1px 1px 3px #000000;
     font-family: 'Nunito', sans-serif;
 }
 
+.fotos-Redes{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.fotos-RedesLink{
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+
 footer nav div a:hover{
     transform: scale(0.8);
-    background-color:rgb(0, 0, 253) ;
 }
 
 /*fondo completo*/
@@ -190,14 +208,46 @@ main .aptitudes{
 }
 
 
+/* edit de servicios*/
+
+
+.main-Servicios{
+    display: grid;
+    grid-template-areas: "titulo titulo"
+    "info img";
+}
+
+.compu-Servicios{
+    width: 34.375rem;
+    height: 34.375rem;
+    display: grid;
+    grid-area: img;
+    box-shadow: 2px 2px 3px gray;
+    border-radius: 5px;
+}
+
+.info-Servicios{
+    display: grid;
+    grid-area: info;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: rgb(73, 2, 17) ;
+}
+
+.titulo-Servicios{
+    display: grid;
+    grid-area: titulo;
+}
 
 /*edit de contacto*/
     main form fieldset{
         font-size: 20px;
         color:rgb(43, 66, 66) ;
         text-shadow: 1px 1px 4px black;
-        padding: 70px;
-        height: 100%;
+        height: 26rem;
+        width: 73rem;
         background-image: url(../img/fondo.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -211,7 +261,7 @@ main .aptitudes{
     main form fieldset div label{
         font-size: 20px;
         color: black;
-        font-family:'Cinzel', serif ;     
+        font-family: 'Kanit', sans-serif;     
     }
 
 
@@ -221,9 +271,8 @@ main .aptitudes{
     }
 
     .consulta-Contacto{
-        padding-left: 300px;
-        padding-bottom:20px ;
-        text-align: start;
+        padding-left: 45rem;
+        padding-bottom:1.1rem ;
     }
 
 
@@ -234,6 +283,22 @@ main .aptitudes{
         border-radius: 10px;
         box-shadow: 1px 1px 3px rgb(0, 0, 0);
     }
+ 
+    .tamañot{
+        width: 35% !important;
+    }
+    
+    .tamañob{
+        width: 50% !important;
+    }
+    .tamañoe{
+        width: 60% !important;
+    }
+
+    .cuerpo-form{
+        margin-left: 2rem !important;
+    }
+
 
 
 /*fuente para toda la pag*/
@@ -244,13 +309,73 @@ body{
 
 /*estilo foto*/
 main h2 .foton{
-    height: 470px;
+    height: 30rem;
     border-radius: 100%;
     border-color: black;
     box-shadow: 2px 2px 7px black;
-    width: 45%;
+    width: 30rem;
 }
 
 
 
 /*estilo loguito wsp*/
+
+.logo-Wsp{
+    width: 70px;
+    height: 60px;
+
+}
+
+
+.logo-WspMove{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 110px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+/*mq*/
+
+
+@media (max-width: 768px){
+   
+    main h2 .foton{
+        display: flex;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .main-Servicios{
+        display: grid;
+        grid-template-areas: "titulo titulo"
+        "img img"
+        "info info";
+    }
+    
+    .info-Servicios{
+        display: grid;
+        font-size: 1.1rem;
+    }
+
+    .compu-Servicios{
+        display: grid;
+        width: 25rem;
+        height: 25rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main form fieldset{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35rem;
+        width: 10rem;
+    }
+}
