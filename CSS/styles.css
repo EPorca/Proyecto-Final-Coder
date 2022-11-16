@@ -354,6 +354,7 @@ main h2 .foton{
         display: flex;
         width: 20rem;
         height: 20rem;
+        margin-right: 3rem;
     }
 
     .main-Servicios{
