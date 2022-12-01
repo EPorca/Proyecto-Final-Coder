@@ -1,387 +1,286 @@
+@charset "UTF-8";
 /*reset*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /* Barra de scroll oculta */
-}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 ::-webkit-scrollbar {
-    display: none;
-    }
-
-
+  display: none; }
 
 /*estilo menu*/
-
-body header ul li a{
-    color: rgb(0, 26, 34);
-    font-size: 18px;
+body {
+  background-image: linear-gradient(to bottom, #454fad, #283a95, #0b257c);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  body header {
     display: flex;
-    margin-left: 20px;
-    background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%);
-    border-radius: 30px;
-    box-shadow: 1px 1px 3px black;
-    text-shadow: 1px 1px 2px rgb(75, 75, 228);
-}
-
-.menu-Titulo{
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 2.3rem; 
-    text-decoration:none; 
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
-}
-
-body header ul li a:hover{
-    transform: scale(0.8);
-    background-image: linear-gradient(to left, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%);
-}
-
-/*acomodado de menu y tipo de letra*/
-header ul li{
-    display: inline-block;
-    font-family: "PT Sans Narrow", sans-serif;
-}
-
-
-header ul li a{
+    padding-top: 7px;
+    background-color: #1d1b1b;
+    box-shadow: 3px 3px 5px #ECE9E6; }
+    body header nav .menu-Titulo {
+      font-family: "PT Sans Narrow", sans-serif;
+      font-size: 2.3rem;
+      text-decoration: none;
+      color: #ECE9E6;
+      text-shadow: 0.5px 0.5px 3px #4e4e4e; }
+    body header ul li {
+      display: inline-block;
+      font-family: "PT Sans Narrow", sans-serif; }
+      body header ul li a {
+        color: #001a22;
+        font-size: 18px;
+        display: flex;
+        margin-left: 20px;
+        background-color: #ECE9E6;
+        border-radius: 30px;
+        box-shadow: 1px 1px 3px black;
+        text-shadow: 1px 1px 2px #4b4be4;
         padding: 10px;
         text-decoration: none;
-}
-
+        transition: 1s; }
+      body header ul li a:hover {
+        transform: scale(0.8);
+        background-image: linear-gradient(to left, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%);
+        transition: 1s; }
 
 /*estilo del main*/
-
-main .titulo{
-    margin: 50px;
-    color: black;
-    font-size: 30px;
+.index-Main {
+  margin: 80px; }
+  .index-Main .titulo {
+    font-size: 1.7rem;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    font-family: 'Crimson Text', serif;
-}
-
-
-body main .descrip-Home{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 10px;
+    color: #000000;
+    text-shadow: 1px 1px 3px #222222; }
+  .index-Main .descrip-Home {
     padding: 10px;
     text-align: center;
     font-size: 22px;
-    color: rgb(119, 6, 29);
+    color: #aabed1;
+    text-shadow: 0.5px 0.5px 4px #bebdbc;
     display: flex;
     flex-direction: column;
-    font-family: 'Cinzel', serif;
-}
+    font-family: 'Cinzel', serif; }
 
-main{
-    margin: 80px
-}
-
-
-/*estilo pie de pagina*/
-
-footer{
-    margin-top: 100px;
-}
-
-footer h2{
+/*estilo del footer*/
+footer {
+  margin-top: 100px; }
+  footer h2 {
     font-size: 18px;
-    color: rgb(87, 86, 86);
-}
-
-footer nav div{
+    color: #030303;
+    text-align: center; }
+  footer nav div {
     display: flex;
     gap: 30px;
     justify-content: space-around;
-    padding: 10px;
-}
-
-
-footer nav div a{
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 6px;
-    text-shadow: 1px 1px 3px #000000;
-}
-
-.fotos-Redes{
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-
-.fotos-RedesLink{
-    width: 60px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-
-
-
-footer nav div a:hover{
-    transform: scale(0.8);
-}
-
-/*fondo completo*/
-body{
-    background-image: url(../img/fondo\ 2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
+    padding: 10px; }
+    footer nav div a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 6px;
+      text-shadow: 1px 1px 3px #000000;
+      scale: 1;
+      transition: 1s; }
+      footer nav div a .fotos-Redes {
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px; }
+      footer nav div a .fotos-RedesLink {
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px; }
+    footer nav div a:hover {
+      transform: scale(1.2);
+      transition: 1s; }
 
 /*edit de perfil*/
-body header .presentacion, h2{
-    text-align: center;
-    margin: 30px;
-    padding: 10px;
-}
+body header .presentacion h2 {
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+  color: #aabed1; }
 
-body main .nombre{
-    text-decoration: underline;
-    font-size: 45px;
-    font-family: 'Cinzel', serif;
-}
+body main .nombre {
+  text-decoration: underline;
+  font-size: 45px;
+  font-family: 'Cinzel', serif;
+  color: #fffdfd;
+  text-shadow: 0.5px 0.5px 3px #000000;
+  margin: 1rem;
+  padding: 0.2rem; }
 
-body main .info-Personal{
-    font-family: 'Cinzel', serif;
-    font-size: 27px;
-    margin-top: 120px;
-}
+body .info-Personal {
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  margin-top: 120px;
+  color: #fffdfd;
+  text-shadow: 0.5px 0.5px 3px #000000; }
 
-body main .subtitulo-Nombre{
-    margin-bottom: 80px;
-    font-size: 30px;
-    font-family: 'Cinzel', serif;
-}
+body .subtitulo-Nombre {
+  margin-bottom: 80px;
+  font-size: 30px;
+  font-family: 'Cinzel', serif;
+  color: #fffdfd;
+  text-shadow: 0.5px 0.5px 3px #000000; }
 
+body .dato {
+  text-align: center;
+  color: whitesmoke;
+  margin: 12px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  font-size: 1.5rem;
+  text-shadow: 0.5px 0.5px 3px #000000;
+  background-color: #6164c6; }
 
-body main .dato{
-    background-color: rgb(33, 33, 194);
-    text-align: center;
-    color: aliceblue;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 100px;
-    box-shadow: 1px 1px 3px rgb(0, 0, 0);
-}
+body .Info {
+  margin: 12px;
+  padding: 5px;
+  box-shadow: 2px 2px 5px black;
+  text-align: center;
+  color: whitesmoke;
+  text-decoration: underline;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-shadow: 0.5px 0.5px 3px #000000;
+  background-color: #6164c6; }
 
+body .presentacion {
+  color: whitesmoke;
+  box-shadow: 3px 3px 6px black;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+  background-color: #6164c6;
+  text-shadow: 0.5px 0.5px 3px #000000; }
 
-body main .Info{
-    padding: 10px;
-    margin: 5px;
-    background-color: rgb(221, 221, 221);
-    text-align: center;
-    color: rgb(35, 35, 153);
-    text-decoration: underline;
-    border-radius: 100px;
-    box-shadow: 1px 1px 3px rgb(0, 0, 0);
-}
-
-
-body main h2{
-    text-decoration: underline;
-}
-
-
+body h2 {
+  text-decoration: underline; }
 
 /*edit de aptitudes*/
-
-
-main .aptitudes{
+main {
+  margin-top: 4rem; }
+  main .habilidades {
+    color: #FFFFFF;
+    text-shadow: 0.5px 0.5px 3px black; }
+  main .aptitudes {
     text-align: center;
-    color: rgb(80, 255, 133);
+    color: #50ff85;
     font-size: 23px;
-    padding: 7px;
-}
+    padding: 7px; }
 
-
-/* edit de servicios*/
-
-
-.main-Servicios{
-    display: grid;
-    grid-template-areas: "titulo titulo"
-    "info img";
-}
-
-.compu-Servicios{
-    width: 34.375rem;
-    height: 34.375rem;
-    display: grid;
-    grid-area: img;
-    box-shadow: 2px 2px 3px gray;
-    border-radius: 5px;
-}
-
-.info-Servicios{
-    display: grid;
-    grid-area: info;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    margin-right: 10px;
-    color: rgb(73, 2, 17) ;
-}
-
-.titulo-Servicios{
-    display: grid;
+/*edit de servicios*/
+.main-Servicios div {
+  display: grid;
+  grid-template-areas: "titulo titulo" "info img"; }
+  .main-Servicios div .titulo-Servicios {
     grid-area: titulo;
-}
+    text-align: center;
+    margin: 4rem;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0.5px 0.5px 3px black; }
+  .main-Servicios div .compu-Servicios {
+    grid-area: img;
+    width: 35rem;
+    height: 35rem;
+    margin: 3.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black; }
+  .main-Servicios div .info-Servicios {
+    grid-area: info;
+    text-align: center;
+    margin-top: 3.6rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #aabed1;
+    text-shadow: 0.5px 0.5px 4px #5c5b5b; }
 
 /*edit de contacto*/
-    main form fieldset{
-        font-size: 20px;
-        color:rgb(43, 66, 66) ;
-        text-shadow: 1px 1px 4px black;
-        height: 26rem;
-        width: 73rem;
-        background-image: url(../img/fondo.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    main form fieldset div label{
-        font-size: 20px;
-        color: black;
-        font-family: 'Kanit', sans-serif;     
-    }
-
-
-    main form fieldset div input{
-        padding: 7px;
-        margin: 7px;
-    }
-
-    .consulta-Contacto{
-        padding-left: 45rem;
-        padding-bottom:1.1rem ;
-    }
-
-
-    .enviado-Formulario{
-        color: rgb(0, 0, 0);
-        text-shadow: 1px 1px 3px rgb(49, 49, 49);
-        background-color:#00aeff;
-        border-radius: 10px;
-        box-shadow: 1px 1px 3px rgb(0, 0, 0);
-    }
- 
-    .tamañot{
-        width: 35% !important;
-    }
-    
-    .tamañob{
-        width: 50% !important;
-    }
-    .tamañoe{
-        width: 60% !important;
-    }
-
-    .cuerpo-form{
-        margin-left: 2rem !important;
-    }
-
-
-
-/*fuente para toda la pag*/
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
+main .cuerpo-form {
+  margin-top: 4rem;
+  margin-left: 2rem !important; }
+  main .cuerpo-form div .tamañot {
+    width: 35% !important; }
+  main .cuerpo-form div .tamañob {
+    width: 50% !important; }
+  main .cuerpo-form div .tamañoe {
+    width: 60% !important; }
 
 /*estilo foto*/
-main h2 .foton{
-    height: 30rem;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  main h2 .foton {
     border-radius: 100%;
-    border-color: black;
-    box-shadow: 2px 2px 7px black;
+    box-shadow: 2px 2px 4px black;
     width: 30rem;
-}
+    height: 30rem;
+    margin: 4rem;
+    padding: 0; }
 
-
-
-/*estilo loguito wsp*/
-
-.logo-Wsp{
-    width: 70px;
-    height: 60px;
-
-}
-
-
-.logo-WspMove{
-    display: flex;
-    width: 100%;
-    position: fixed;
-    bottom: 110px;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
+/* estilo logo de WSP */
+footer .logo-WspMove {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 110px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  footer .logo-WspMove .logo-Wsp {
+    width: 5rem;
+    height: 4.5rem; }
 
 /*mq*/
+@media (max-width: 769px) {
+  main h2 .foton {
+    display: flex;
+    margin: 10rem;
+    padding: 10rem;
+    margin-right: 3rem; } }
 
+.main-Servicios {
+  display: grid;
+  grid-template-areas: "titulo titulo" "img img" "info info"; }
+  .main-Servicios .info-Servicios {
+    display: grid;
+    font-size: 1.1rem; }
+  .main-Servicios .compu-Servicios {
+    display: grid;
+    width: 25rem;
+    height: 25rem;
+    justify-content: center;
+    align-items: center; }
 
-@media (max-width: 768px){
-   
-    main h2 .foton{
-        display: flex;
-        width: 20rem;
-        height: 20rem;
-        margin-right: 3rem;
-    }
-
-    .main-Servicios{
-        display: grid;
-        grid-template-areas: "titulo titulo"
-        "img img"
-        "info info";
-    }
-    
-    .info-Servicios{
-        display: grid;
-        font-size: 1.1rem;
-    }
-
-    .compu-Servicios{
-        display: grid;
-        width: 25rem;
-        height: 25rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main form fieldset{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35rem;
-        width: 10rem;
-    }
-}
+main form fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  width: 10rem; }
