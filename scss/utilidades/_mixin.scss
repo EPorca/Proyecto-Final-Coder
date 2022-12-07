@@ -1,0 +1,13 @@
+// mixin con parametros
+
+
+@mixin  medidas($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+
+@mixin marginpadding( $margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}

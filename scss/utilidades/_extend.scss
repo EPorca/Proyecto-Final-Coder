@@ -1,0 +1,33 @@
+//extend
+
+%estilos-Menu{
+    background-image: linear-gradient(to bottom,#454fad, #283a95,#0b257c );
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+%estilos-Header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-top: 7px ;
+    background-color: #1d1b1b;
+    box-shadow: 3px 3px 5px #ECE9E6;
+}
+%estilos-Boton{
+    color: rgb(0, 26, 34);
+    font-size: 18px;
+    display: flex;
+    margin-left: 20px;
+    background-color: $fondo-menu;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 2px rgb(47, 47, 194);
+    padding: 10px;
+    text-decoration: none;
+    transition: 1s;
+}
+
