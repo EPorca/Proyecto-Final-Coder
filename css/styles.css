@@ -33,7 +33,7 @@ body header ul li a {
   background-color: #ECE9E6;
   border-radius: 30px;
   box-shadow: 1px 1px 3px black;
-  text-shadow: 1px 1px 2px #4b4be4;
+  text-shadow: 1px 1px 2px #2f2fc2;
   padding: 10px;
   text-decoration: none;
   transition: 1s; }
@@ -300,8 +300,8 @@ footer .logo-WspMove {
       grid-area: info;
       width: 100%; }
     .main-Servicios .compu-Servicios {
-      width: 200px !important;
-      height: 170px !important;
+      width: 250px !important;
+      height: 220px !important;
       margin: 0.5rem;
       display: grid;
       grid-area: img;
@@ -312,3 +312,51 @@ footer .logo-WspMove {
     align-items: center;
     height: 35rem;
     width: 10rem; } }
+
+@media (max-width: 335px) {
+  header .menu-Titulo {
+    font-size: 10px; }
+  header a {
+    text-align: center; }
+  main h2 .foton {
+    display: flex;
+    margin: 4rem;
+    padding: 0;
+    width: 15rem;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2.5rem; }
+  .main-Servicios {
+    display: grid;
+    grid-template-areas: "titulo titulo" "img img" "info info" !important; }
+    .main-Servicios .titulo-Servicios {
+      font-size: 1.1rem !important;
+      display: grid;
+      grid-area: titulo; }
+    .main-Servicios .info-Servicios {
+      font-size: 14px !important;
+      display: grid;
+      grid-area: info;
+      width: 100%; }
+    .main-Servicios .compu-Servicios {
+      width: 190px !important;
+      height: 170px !important;
+      margin: 0.5rem;
+      display: grid;
+      grid-area: img;
+      padding: 0%; } }
+
+footer .logo-WspMove .logo-Wsp {
+  width: 4rem !important;
+  height: 3.5rem !important; }
+  footer .logo-WspMove .logo-Wsp nav div .fotos-Redes {
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center; }
+  footer .logo-WspMove .logo-Wsp nav div .fotos-RedesLink {
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center; }

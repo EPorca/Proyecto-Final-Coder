@@ -28,29 +28,33 @@
 
 body {
     @extend %estilos-Menu;
-    header{
+
+    header {
         @extend %estilos-Header;
-        .nav-Menu{
-            padding-top: 7px ;
+
+        .nav-Menu {
+            padding-top: 7px;
             background-color: #1d1b1b;
             border-radius: 15px;
         }
+
         nav {
-            div{
-            .menu-Titulo{
-                font-family: "PT Sans Narrow", sans-serif;
-                font-size: 2.3rem;
-                text-decoration: none;
-                color:#ECE9E6;
-                text-shadow:0.5px 0.5px 3px #4e4e4e;
+            div {
+                .menu-Titulo {
+                    font-family: "PT Sans Narrow", sans-serif;
+                    font-size: 2.3rem;
+                    text-decoration: none;
+                    color: #ECE9E6;
+                    text-shadow: 0.5px 0.5px 3px #4e4e4e;
+                }
             }
         }
-        }
+
         ul {
             li {
                 display: inline-block;
                 font-family: "PT Sans Narrow", sans-serif;
-                
+
 
                 a {
                     @extend %estilos-Boton
@@ -70,22 +74,24 @@ body {
 
 .index-Main {
     margin: 80px;
-    .titulo{
+
+    .titulo {
         font-size: 1.7rem;
         display: flex;
         flex-direction: column;
         text-align: center;
-        font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 10px;
         color: #000000;
         text-shadow: 1px 1px 3px #222222;
     }
+
     .descrip-Home {
         padding: 10px;
         text-align: center;
         font-size: 22px;
         color: $textos-especiales;
-        text-shadow:0.5px 0.5px 4px #bebdbc;
+        text-shadow: 0.5px 0.5px 4px #bebdbc;
         display: flex;
         flex-direction: column;
         font-family: 'Cinzel', serif;
@@ -166,8 +172,8 @@ body {
             text-decoration: underline;
             font-size: 45px;
             font-family: 'Cinzel', serif;
-            color:#fffdfd;
-            text-shadow:0.5px 0.5px 3px #000000;
+            color: #fffdfd;
+            text-shadow: 0.5px 0.5px 3px #000000;
             @include marginpadding(1rem, 0.2rem)
         }
     }
@@ -176,8 +182,8 @@ body {
         font-family: 'Cinzel', serif;
         font-size: 40px;
         margin-top: 120px;
-        color:#fffdfd ;
-        text-shadow:0.5px 0.5px 3px #000000;
+        color: #fffdfd;
+        text-shadow: 0.5px 0.5px 3px #000000;
         text-align: center;
     }
 
@@ -186,8 +192,8 @@ body {
         margin-bottom: 80px;
         font-size: 30px;
         font-family: 'Cinzel', serif;
-        color:#fffdfd;
-        text-shadow:0.5px 0.5px 3px #000000;
+        color: #fffdfd;
+        text-shadow: 0.5px 0.5px 3px #000000;
     }
 
     .dato {
@@ -197,7 +203,7 @@ body {
         border-radius: 10px;
         box-shadow: 2px 2px 5px black;
         font-size: 1.5rem;
-        text-shadow:0.5px 0.5px 3px #000000;
+        text-shadow: 0.5px 0.5px 3px #000000;
         background-color: $fondos-especiales;
     }
 
@@ -209,16 +215,17 @@ body {
         text-decoration: underline;
         border-radius: 10px;
         font-size: 1.5rem;
-        text-shadow:0.5px 0.5px 3px #000000;
+        text-shadow: 0.5px 0.5px 3px #000000;
         background-color: $fondos-especiales;
     }
-    .presentacion{
+
+    .presentacion {
         color: $color-letras;
         box-shadow: 3px 3px 6px black;
         border-radius: 10px;
         @include marginpadding(30px, 10px);
         background-color: $fondos-especiales;
-        text-shadow:0.5px 0.5px 3px #000000;
+        text-shadow: 0.5px 0.5px 3px #000000;
     }
 
     h2 {
@@ -232,10 +239,12 @@ body {
 
 main {
     margin-top: 4rem;
-    .habilidades{
+
+    .habilidades {
         color: #FFFFFF;
         text-shadow: 0.5px 0.5px 3px black;
     }
+
     .aptitudes {
         text-align: center;
         color: rgb(80, 255, 133);
@@ -245,14 +254,15 @@ main {
 }
 
 
-/*edit de servicios*/ 
-.main-Servicios{
-    div{
+/*edit de servicios*/
+.main-Servicios {
+    div {
         display: grid;
         grid-template-areas: "titulo titulo"
-        "info img"
-        "info img";
-        .titulo-Servicios{
+            "info img"
+            "info img";
+
+        .titulo-Servicios {
             grid-area: titulo;
             text-align: center;
             margin: 4rem;
@@ -260,14 +270,16 @@ main {
             color: rgb(255, 255, 255);
             text-shadow: 0.5px 0.5px 3px black;
         }
-        .compu-Servicios{
+
+        .compu-Servicios {
             grid-area: img;
             @include medidas(35rem, 35rem);
-            margin:3.5rem;
+            margin: 3.5rem;
             border-radius: 10px;
             box-shadow: 2px 2px 5px black;
         }
-        .info-Servicios{
+
+        .info-Servicios {
             grid-area: info;
             text-align: center;
             margin-top: 1rem;
@@ -275,57 +287,60 @@ main {
             border-radius: 10px;
             font-size: 2rem;
             color: $textos-especiales;
-            text-shadow:0.5px 0.5px 4px #5c5b5b;
+            text-shadow: 0.5px 0.5px 4px #5c5b5b;
         }
     }
 }
 
 
-/*edit de contacto*/ 
+/*edit de contacto*/
 
-main{
-    .cuerpo-form{
+main {
+    .cuerpo-form {
         color: #FFFFFF;
-        text-shadow:0.5px 0.5px 3px #414141;
+        text-shadow: 0.5px 0.5px 3px #414141;
         margin-top: 4rem;
         margin-left: 2rem !important;
-        div{
-            .tamañot{
+
+        div {
+            .tamañot {
                 width: 35% !important;
             }
-            
-            .tamañob{
+
+            .tamañob {
                 width: 50% !important;
             }
-            .tamañoe{
+
+            .tamañoe {
                 width: 60% !important;
             }
-        
+
         }
     }
 }
 
 /*estilo foto*/
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    h2{
-        .foton{
+
+    h2 {
+        .foton {
             border-radius: 100%;
             box-shadow: 2px 2px 4px black;
             @include medidas(30rem, 30rem);
-            @include marginpadding(4rem,0 )
+            @include marginpadding(4rem, 0)
         }
     }
 }
 
 /* estilo logo de WSP */
 
-footer{
-    .logo-WspMove{
+footer {
+    .logo-WspMove {
         display: flex;
         position: fixed;
         bottom: 110px;
@@ -334,7 +349,8 @@ footer{
         z-index: 0;
         justify-content: flex-end;
         align-items: flex-end;
-        .logo-Wsp{
+
+        .logo-Wsp {
             @include medidas(5rem, 4.5rem);
             z-index: 0;
             padding: 0%;
@@ -343,21 +359,22 @@ footer{
 }
 
 
-/*mq*/ 
+/*mq*/
 
-@media (max-width:750px){
-    header{
-        .menu-Titulo{
+@media (max-width:750px) {
+    header {
+        .menu-Titulo {
             font-size: 13px;
         }
-        a{
+
+        a {
             text-align: center;
         }
     }
 
-    main{
-        h2{
-            .foton{
+    main {
+        h2 {
+            .foton {
                 display: flex;
                 @include marginpadding(5rem, 0);
                 @include medidas(20rem, 20rem);
@@ -366,27 +383,30 @@ footer{
                 margin-right: 3rem;
             }
         }
-        }
-    
+    }
 
-    .main-Servicios{
+
+    .main-Servicios {
         display: grid;
         grid-template-areas: "titulo titulo"
-        "img img"
-        "info info" !important;
-        .titulo-Servicios{
+            "img img"
+            "info info" !important;
+
+        .titulo-Servicios {
             font-size: 1.3rem !important;
             display: grid;
             grid-area: titulo;
         }
-        .info-Servicios{
+
+        .info-Servicios {
             font-size: 15px !important;
             display: grid;
             grid-area: info;
             width: 100%;
         }
-        .compu-Servicios{
-            @include medidas(200px !important, 170px !important);
+
+        .compu-Servicios {
+            @include medidas(250px !important, 220px !important);
             margin: 0.5rem;
             display: grid;
             grid-area: img;
@@ -394,14 +414,96 @@ footer{
         }
     }
 
-    main{ 
-        form{
-        fieldset{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35rem;
-        width: 10rem;}
+    main {
+        form {
+            fieldset {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 35rem;
+                width: 10rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width:335px) {
+    header {
+        .menu-Titulo {
+            font-size: 10px;
+        }
+
+        a {
+            text-align: center;
+        }
+    }
+
+    main {
+        h2 {
+            .foton {
+                display: flex;
+                @include marginpadding(4rem, 0);
+                @include medidas(15rem, 15rem);
+                justify-content: center;
+                align-items: center;
+                margin-right: 2.5rem;
+            }
+        }
+    }
+
+
+    .main-Servicios {
+        display: grid;
+        grid-template-areas: "titulo titulo"
+            "img img"
+            "info info" !important;
+
+        .titulo-Servicios {
+            font-size: 1.1rem !important;
+            display: grid;
+            grid-area: titulo;
+        }
+
+        .info-Servicios {
+            font-size: 14px !important;
+            display: grid;
+            grid-area: info;
+            width: 100%;
+        }
+
+        .compu-Servicios {
+            @include medidas(190px !important, 170px !important);
+            margin: 0.5rem;
+            display: grid;
+            grid-area: img;
+            padding: 0%;
+        }
+    }
+}
+
+footer {
+    .logo-WspMove {
+        .logo-Wsp {
+            @include medidas(4rem !important, 3.5rem !important);
+
+            nav {
+                div {
+                    .fotos-Redes {
+                        height: 25px;
+                        width: 25px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .fotos-RedesLink {
+                        height: 30px;
+                        width: 30px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
         }
     }
 }
